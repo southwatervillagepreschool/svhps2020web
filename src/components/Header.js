@@ -1,6 +1,7 @@
 import React from "react"
 
-import "../styles/hamburger.css"
+import { Link } from "gatsby"
+// import "../styles/hamburger.css"
 
 const Header = () => {
   return (
@@ -9,9 +10,23 @@ const Header = () => {
       <a href="/">
         <h1>Southwater Village Preschool</h1>
       </a>
-      <button >
+      <button>
         <div class="hamburger"></div>
       </button>
+      <nav>
+        <Link activeClassName="active" to="/">
+          Home
+        </Link>
+        <Link activeClassName="active" to="/about">
+          About
+        </Link>
+        <Link activeClassName="active" to="/contact">
+          Contact
+        </Link>
+        <Link activeClassName="active" to="/test">
+          Test
+        </Link>
+      </nav>
     </header>
   )
 }

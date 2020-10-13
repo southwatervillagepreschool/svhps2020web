@@ -1,4 +1,5 @@
 import React from "react"
+import logo from "../images/Ofsted_Good_GP_Colour.jpg"
 
 import "../styles/normalize.css"
 import "../styles/main.css"
@@ -11,7 +12,12 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Header />
-      <main>{children}</main>
+      <main>
+        {children}
+
+        
+      </main>
+      <img class="logo-ofsted" src={logo} alt="" />
       <Footer />
     </div>
   )

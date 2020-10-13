@@ -126,48 +126,48 @@ const test = () => {
       <hr />
       <form>
         <div>
-          <label for="text">Name</label>
-          <input type="text" name="text" id="text" />
+          <label for="text">Name
+          <input type="text" name="text" id="text" /></label>
         </div>
 
         <div>
-          <label for="number">Number</label>
-          <input type="number" name="number" id="number" />
+          <label for="number">Number
+          <input type="number" name="number" id="number" /></label>
         </div>
 
         <div>
-          <label for="text">Address</label>
-          <input type="text" name="text" id="text" placeholder="address here" />
+          <label for="text">Address
+          <input type="text" name="text" id="text" placeholder="address here" /></label>
         </div>
         <div>
-          <label for="email">Email</label>
+          <label for="email">Email
           <input
             type="email"
             name="email"
             id="email"
             placeholder="name@domain.com"
-          />
+          /></label>
         </div>
 
         <div>
-          <label for="textarea">Textarea</label>
+          <label for="textarea">Textarea
           <textarea
             name="textarea"
             id="textarea"
             cols="30"
             rows="10"
             placeholder="Enter your text here."
-          ></textarea>
+          ></textarea></label>
         </div>
 
         <div>
-          <label for="select">Select</label>
+          <label for="select">Select
           <select name="select" id="item">
             <option value="item one">Item one</option>
             <option value="item Two">Item Two</option>
             <option value="item Three">Item Three</option>
             <option value="item Four">Item Four</option>
-          </select>
+          </select></label>
         </div>
 
         <div class="form__group">
