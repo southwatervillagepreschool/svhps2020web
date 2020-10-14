@@ -1,21 +1,49 @@
 import React from "react"
 
-import Layout from "../components/layout"
-
+import { useStaticQuery, graphql } from "gatsby"
+import Layout from "../components/Layout"
+import Hero2 from "../components/Hero"
 export default function Home() {
+  const data = useStaticQuery(graphql`
+    query {
+      allFile(filter: { sourceInstanceName: { eq: "newsPage" } }) {
+        nodes {
+          childMarkdownRemark {
+            frontmatter {
+              title
+            }
+            html
+          }
+        }
+      }
+      file(relativePath: { eq: "preschool.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  const parts = [...data.allFile.nodes]
   return (
     <Layout>
-      <p>
-        Lorem ipsum dolor sit amet Natus adipisicing elit. Placeat fuga natus
-        nam! Natus, tempore nihil. Sequi numquam fuga in ut consequatur at
-        dolorem molestias modi distinctio corporis omnis quod, molestiae a alias
-        quibusdam repellat cupiditate. Architecto hic minus eaque ullam ad
-        asperiores saepe adipisci aut, accusantium fugiat aliquam fuga
-        temporibus minima, facilis porro distinctio nulla consectetur neque um
-        sed architecto possimus in similique aperiam nesciunt adipisci
-        voluptatibus id reprehenderit sit cumque. Rerum dignissimos ab animi
-        illum sint.
-      </p>
+      <Hero2
+        fluidImage={data.file.childImageSharp.fluid}
+        imageAlt=""
+        tagLine="WHERE LEARNING IS FUN"
+      />
+      {/* <pre>{JSON.stringify(parts[0], null, 4)}</pre> */}
+      {parts.map(part => (
+        <div
+          dangerouslySetInnerHTML={{
+            __html: part.childMarkdownRemark.html,
+          }}
+        ></div>
+      ))}
     </Layout>
   )
 }
+
+/* {JSON.stringify(part.childMarkdownRemark.html, null, 4)} */
