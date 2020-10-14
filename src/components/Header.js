@@ -1,17 +1,35 @@
 import React from "react"
 
-import "../styles/hamburger.css"
+import { Link } from "gatsby"
+import logo from "../images/logo-square-no-words.png"
+// import "../styles/hamburger.css"
 
 const Header = () => {
   return (
     <header>
-      <div class="logo"></div>
-      <a href="/">
+      <Link to="/about">
+        <img src={logo} alt="" className="logo" />
+      </Link>
+      <Link to="/">
         <h1>Southwater Village Preschool</h1>
-      </a>
-      <button >
-        <div class="hamburger"></div>
+      </Link>
+      <button>
+        <div className="hamburger"></div>
       </button>
+      <nav>
+        <Link activeClassName="active" to="/">
+          Home
+        </Link>
+        <Link activeClassName="active" to="/about">
+          Our Nursery
+        </Link>
+        <Link activeClassName="active" to="/contact">
+          Contact Us
+        </Link>
+        <Link activeClassName="active" to="/test">
+          News
+        </Link>
+      </nav>
     </header>
   )
 }

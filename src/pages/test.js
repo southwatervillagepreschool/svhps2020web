@@ -1,14 +1,16 @@
 import React from "react"
 
-import {Link} from 'gatsby'
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 const test = () => {
   return (
     <Layout>
-      <div class="full-bleed hero">
+      <div className="full-bleed hero">
         <h1>where learning is fun</h1>
         {/* <button hero>Contact us</button> */}
-        <Link className='call-to-action' to='/contact'>Contact Us</Link>
+        <Link className="call-to-action" to="/contact">
+          Contact Us
+        </Link>
       </div>
       <h1>Heading 1</h1>
       <p>
@@ -18,38 +20,40 @@ const test = () => {
       </p>
       <h2>Table heading</h2>
       <table>
-        <tr>
-          <th>Name</th>
-          <th>dkk</th>
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <th>dkk</th>
 
-          <th>Price</th>
-        </tr>
-        <tr>
-          <td>Natus</td>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Natus</td>
 
-          <td>adipisci</td>
-          <td class="currency">25.50</td>
-        </tr>
-        <tr>
-          <td>Natus</td>
+            <td>adipisci</td>
+            <td className="currency">25.50</td>
+          </tr>
+          <tr>
+            <td>Natus</td>
 
-          <td>adipisci</td>
-          <td class="currency">25.50</td>
-        </tr>
-        <tr>
-          <td>Natus</td>
+            <td>adipisci</td>
+            <td className="currency">25.50</td>
+          </tr>
+          <tr>
+            <td>Natus</td>
 
-          <td>adipisci</td>
-          <td class="currency">25.50</td>
-        </tr>
-        <tr>
-          <td>Natus</td>
+            <td>adipisci</td>
+            <td className="currency">25.50</td>
+          </tr>
+          <tr>
+            <td>Natus</td>
 
-          <td>adipisci</td>
-          <td class="currency">25.50</td>
-        </tr>
+            <td>adipisci</td>
+            <td className="currency">25.50</td>
+          </tr>
+        </tbody>
       </table>
-      <div class="">
+      <div className="">
         <p>
           Lorem ipsum dolor sit amet Natus adipisicing elit. Placeat fuga natus
           nam! Natus, tempore nihil. Sequi numquam fuga in ut consequatur at
@@ -94,7 +98,7 @@ const test = () => {
           necessitatibus! Commodi ullam aliquid odit eveniet quam?
         </p>
       </div>
-      <img src="./img/web.jpg" class="full-bleed" alt="" />
+      <img src="./img/web.jpg" className="full-bleed" alt="" />
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit provident
         culpa dolorum. Similique dolorem veniam id facilis, dignissimos nobis
@@ -126,51 +130,68 @@ const test = () => {
       <hr />
       <form>
         <div>
-          <label for="text">Name</label>
-          <input type="text" name="text" id="text" />
+          <label htmlFor="text">
+            Name
+            <input type="text" name="text" id="text" />
+          </label>
         </div>
 
         <div>
-          <label for="number">Number</label>
-          <input type="number" name="number" id="number" />
+          <label htmlFor="number">
+            Number
+            <input type="number" name="number" id="number" />
+          </label>
         </div>
 
         <div>
-          <label for="text">Address</label>
-          <input type="text" name="text" id="text" placeholder="address here" />
+          <label htmlFor="text">
+            Address
+            <input
+              type="text"
+              name="text"
+              id="text"
+              placeholder="address here"
+            />
+          </label>
         </div>
         <div>
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="name@domain.com"
-          />
+          <label htmlFor="email">
+            Email
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="name@domain.com"
+            />
+          </label>
         </div>
 
         <div>
-          <label for="textarea">Textarea</label>
-          <textarea
-            name="textarea"
-            id="textarea"
-            cols="30"
-            rows="10"
-            placeholder="Enter your text here."
-          ></textarea>
+          <label htmlFor="textarea">
+            Textarea
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Enter your text here."
+            ></textarea>
+          </label>
         </div>
 
         <div>
-          <label for="select">Select</label>
-          <select name="select" id="item">
-            <option value="item one">Item one</option>
-            <option value="item Two">Item Two</option>
-            <option value="item Three">Item Three</option>
-            <option value="item Four">Item Four</option>
-          </select>
+          <label htmlFor="select">
+            Select
+            <select name="select" id="item">
+              <option value="item one">Item one</option>
+              <option value="item Two">Item Two</option>
+              <option value="item Three">Item Three</option>
+              <option value="item Four">Item Four</option>
+            </select>
+          </label>
         </div>
 
-        <div class="form__group">
+        <div className="form__group">
           <button type="submit">Submit</button>
           <button type="reset">Reset</button>
           <button>Default</button>
