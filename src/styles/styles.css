@@ -178,10 +178,11 @@ header nav {
 header nav a {
   /* border: solid 3px var(--color-primary); */
   border-top: 3px solid var(--color-background);
+  /* text-transform: uppercase;*/
   margin: 0 4px;
   padding: 0px 4px;
   font-size: 1rem;
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
 header nav a:hover {
   background: var(--color-hover-background);
@@ -333,7 +334,7 @@ button,
   border: var(--border);
   background: var(--color-gray-700);
   box-shadow: var(--shadow-level-2);
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 *:focus {
   /* border-radius: var(--style-borderRadius); */
@@ -354,6 +355,7 @@ button[type="submit"]:hover,
 .call-to-action:hover {
   background: var(--color-gray-1000);
   border-color: var(--color-success);
+  color: var(--color-text);
 }
 
 button[type="reset"] {
@@ -522,7 +524,7 @@ small,
 }
 .hero {
   margin-bottom: 3rem;
-  background: url(/images/preschool.jpg);
+  /* background: url(/images/preschool.jpg); */
   background-color: rgba(0, 0, 0, 0.5);
   background-position: center center;
   background-size: cover;

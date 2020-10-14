@@ -21,7 +21,7 @@ const Header = () => {
           Home
         </Link>
         <Link activeClassName="active" to="/about">
-          Our Nursery
+          About
         </Link>
         <Link activeClassName="active" to="/contact">
           Contact Us
