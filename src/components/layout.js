@@ -12,12 +12,8 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Header />
-      <main>
-        {children}
-
-        
-      </main>
-      <img class="logo-ofsted" src={logo} alt="" />
+      <main>{children}</main>
+      <img className="logo-ofsted" src={logo} alt="" />
       <Footer />
     </div>
   )
