@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"Cuy+":function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),c=t.n(n),i=t("Wbzz"),l=t("7oih"),u=t("1oc3");a.default=function(){var e=Object(i.c)("2599907888");return c.a.createElement(l.a,null,c.a.createElement(u.a,{fluidImage:e.file.childImageSharp.fluid,imageAlt:"",tagLine:"Contact Us"}))}}}]);
-//# sourceMappingURL=component---src-pages-contact-js-54fe98019dccc3661e19.js.map
