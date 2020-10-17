@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"3XHS":function(e,a,t){"use strict";t.r(a);var l=t("KQm4"),n=t("q1tI"),c=t.n(n),i=t("Wbzz"),r=t("7oih"),o=t("1oc3"),u=t("hWbD");a.default=function(){var e=Object(i.c)("1855917675"),a=Object(l.a)(e.allFile.nodes);return c.a.createElement(r.a,null,c.a.createElement(o.a,{fluidImage:e.file.childImageSharp.fluid,imageAlt:"",tagLine:"About Our Preschool"}),c.a.createElement(u.a,{listOfArticles:a}))}}}]);
-//# sourceMappingURL=component---src-pages-about-js-aa069c5034c844c344af.js.map
