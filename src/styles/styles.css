@@ -97,8 +97,8 @@
   --layout-max-char-width: 85ch;
   --layout-main-width-padding: 2em;
   --layout-form-input-max-width: 40ch;
-  /* --layout-aside-column: 1;
-  --nav-nav-column: 3; */
+  --layout-header-height: 80px;
+  /* --nav-nav-column: 3; */
 }
 
 html {
@@ -145,7 +145,7 @@ header {
   font-size: var(--font-header-h1-size);
   background-color: var(--color-header-background);
   color: var(--color-text);
-  min-height: 80px;
+  height: var(--layout-header-height);
   margin: 0;
   /* margin: 0 0.6rem; */
   box-shadow: var(--shadow-level-2);
@@ -614,7 +614,7 @@ small,
     --font-header-h1-size: 0.5rem;
   }
   table {
-    margin: 1em var(--layout-main-width-padding);
+    /* margin: 1em var(--layout-main-width-padding); */
     /* border-collapse: collapse; */
   }
   main {

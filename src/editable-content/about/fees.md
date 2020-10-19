@@ -5,7 +5,7 @@ order: 6
 
 ![children activity](../../images/086.jpg)
 
-### Fees for under 3s and for children accessing hours above the funded 15 hours from September 2020.
+#### Fees for under 3s and for children accessing hours above the funded 15 hours from September 2020.
 
 | | |
 | ----------------- | ----------- |

@@ -8,10 +8,10 @@ const ArticleList = ({ listOfArticles }) => {
           const { frontmatter } = singleArticle.childMarkdownRemark
           const { title } = frontmatter
           const formattedTitle = title
-            ? title.replace(/ /, "_").toLowerCase()
+            ? title.replace(/ /g, "_").toLowerCase()
             : ""
           return (
-            <li>
+            <li key={title}>
               <a href={`#${formattedTitle}`}>{title}</a>
             </li>
           )

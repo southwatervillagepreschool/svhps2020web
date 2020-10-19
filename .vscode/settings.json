@@ -3,6 +3,9 @@
         "allowfullscreen",
         "commonmark",
         "eyfs",
-        "frontmatter"
+        "flyout",
+        "frontmatter",
+        "nav",
+        "nav flyout"
     ]
 }

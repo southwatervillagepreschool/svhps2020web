@@ -8,26 +8,30 @@ import { Helmet } from "react-helmet"
 
 import Header from "./Header"
 import Footer from "./Footer"
+import NavFlyout from "./NavFlyout"
+
+import { NavProvider } from "../NavigationProviders"
 
 const Layout = ({ children }) => {
   const { pathname } = useLocation()
-  console.log(pathname)
+  // console.log(pathname)
   return (
-    <div>
+    <NavProvider>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{pathname.replace("/", "")|| 'home'}</title>
+        <title>{pathname.replace("/", "") || "home"}</title>
         <link
           rel="canonical"
           href="https://southwatervillagepreschool.github.io/svhps2020web/"
         />
       </Helmet>
+      <NavFlyout />
       <Header />
       {/* <h2>{JSON.stringify(location)}</h2> */}
       <main>{children}</main>
       <img className="logo-ofsted" src={logo} alt="" />
       <Footer />
-    </div>
+    </NavProvider>
   )
 }
 

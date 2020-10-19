@@ -3,6 +3,7 @@ import React from "react"
 import { Link } from "gatsby"
 import logo from "../images/logo-square-no-words.png"
 // import "../styles/hamburger.css"
+import MenuButton from "./MenuButton"
 
 const Header = () => {
   return (
@@ -13,9 +14,10 @@ const Header = () => {
       <Link to="/">
         <h1>Southwater Village Preschool</h1>
       </Link>
-      <button>
+      {/* <button>
         <div className="hamburger"></div>
-      </button>
+      </button> */}
+      <MenuButton />
       <nav>
         <Link activeClassName="active" to="/">
           Home

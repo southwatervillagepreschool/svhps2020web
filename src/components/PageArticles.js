@@ -6,16 +6,15 @@ const PageArticles = ({ listOfArticles }) => {
     a => a.childMarkdownRemark.frontmatter.order >= 1
   )
 
-  console.log(filteredList)
   return (
     <>
       {filteredList.map(singleArticle => {
         const { frontmatter, html } = singleArticle.childMarkdownRemark
         const { title } = frontmatter
         const formattedTitle = title
-          ? title.replace(/ /, "_").toLowerCase()
+          ? title.replace(/ /g, "_").toLowerCase()
           : ""
-        
+
         return (
           <article key={title}>
             {title && <h2 id={formattedTitle}>{title}</h2>}

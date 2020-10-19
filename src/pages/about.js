@@ -4,9 +4,14 @@ import Layout from "../components/Layout"
 import Hero2 from "../components/Hero"
 import PageArticles from "../components/PageArticles"
 
-import ArticleList from '../components/ArticleList'
+import ArticleList from "../components/ArticleList"
+// import { NavDispatchContext } from "../NavigationProviders"
 
 const About = () => {
+  // const navStatus = useContext(NavContext)
+  // const setNavStatus = useContext(NavDispatchContext)
+
+  // console.log("status:", navStatus)
   const data = useStaticQuery(graphql`
     query {
       allFile(
@@ -32,6 +37,7 @@ const About = () => {
       }
     }
   `)
+
   const articles = [...data.allFile.nodes]
   return (
     <Layout>
