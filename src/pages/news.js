@@ -1,29 +1,29 @@
 import React from "react"
+
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/Layout"
-import Hero2 from "../components/Hero"
-import PageArticles from "../components/PageArticles"
+import Hero from "../components/Hero"
+import NewsArticles from "../components/NewsArticles"
 
-import ArticleList from '../components/ArticleList'
-
-const About = () => {
+const News = () => {
   const data = useStaticQuery(graphql`
     query {
       allFile(
-        filter: { sourceInstanceName: { eq: "aboutPage" } }
-        sort: { fields: childMarkdownRemark___frontmatter___order, order: ASC }
+        filter: { sourceInstanceName: { eq: "newsPage" } }
+        sort: { fields: childMarkdownRemark___frontmatter___date, order: DESC }
       ) {
         nodes {
           childMarkdownRemark {
             frontmatter {
               title
-              order
+              date
+              author
             }
             html
           }
         }
       }
-      file(relativePath: { eq: "037.jpg" }) {
+      file(relativePath: { eq: "005.jpg" }) {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -32,18 +32,18 @@ const About = () => {
       }
     }
   `)
+
   const articles = [...data.allFile.nodes]
   return (
     <Layout>
-      <Hero2
+      <Hero
         fluidImage={data.file.childImageSharp.fluid}
         imageAlt=""
-        tagLine="About Our Preschool"
+        tagLine="News"
       />
-      <ArticleList listOfArticles={articles} />
-      <PageArticles listOfArticles={articles} />
+      <NewsArticles listOfArticles={articles} />
     </Layout>
   )
 }
 
-export default About
+export default News

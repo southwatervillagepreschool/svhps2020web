@@ -2,15 +2,20 @@ import React from "react"
 
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/Layout"
-import Hero2 from "../components/Hero"
+import Hero from "../components/Hero"
+import PageArticles from "../components/PageArticles"
 export default function Home() {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: { sourceInstanceName: { eq: "newsPage" } }) {
+      allFile(
+        filter: { sourceInstanceName: { eq: "homePage" } }
+        sort: { fields: childMarkdownRemark___frontmatter___order, order: ASC }
+      ) {
         nodes {
           childMarkdownRemark {
             frontmatter {
               title
+              order
             }
             html
           }
@@ -26,22 +31,16 @@ export default function Home() {
     }
   `)
 
-  const parts = [...data.allFile.nodes]
+  const articles = [...data.allFile.nodes]
   return (
     <Layout>
-      <Hero2
+      <Hero
         fluidImage={data.file.childImageSharp.fluid}
         imageAlt=""
         tagLine="WHERE LEARNING IS FUN"
+        showButton={true}
       />
-      {/* <pre>{JSON.stringify(parts[0], null, 4)}</pre> */}
-      {parts.map(part => (
-        <div
-          dangerouslySetInnerHTML={{
-            __html: part.childMarkdownRemark.html,
-          }}
-        ></div>
-      ))}
+      <PageArticles listOfArticles={articles} />
     </Layout>
   )
 }

@@ -1,0 +1,22 @@
+---
+title: our staff
+order: 6
+---
+
+The staff are professionally trained or are currently studying for relevant qualifications. We are kept updated about courses offered by the Early Years Alliance and other professional agencies, which staff are encouraged to attend.
+
+A daily staff rota is displayed on the parent notice board in the preschool.
+
+|                                                                     |                  |
+| ------------------------------------------------------------------- | ---------------- |
+| Manager, Designated Safeguarding and Child Protection Officer       | Heather Clarke   |
+| Deputy Manager, Designated Safeguarding and Child Protection Person | Wendy Lowis      |
+| Leader, Health & Safety Officer                                     | Emma Buckland    |
+| SENCO, Key Person Assistant                                         | Sarah Naylor     |
+| Key Person Assistant                                                | Claire Palmer    |
+| Key Person Assistant                                                | Irene Slade      |
+| Key Person Assistant                                                | Theresa Parsons  |
+| Assistant                                                           | Tracy McLaughlin |
+| Assistant                                                           | Trina Matheson   |
+
+<!-- https://youtu.be/MCl-iClRo9k -->

@@ -5,14 +5,14 @@ import logo from "../images/logo-square-no-words.png"
 const Footer = () => {
   return (
     <footer>
-      <Link to="/about">
+      {/* <Link to="/about"> */}
         <img src={logo} alt="" className="logo" />
-      </Link>
+      {/* </Link> */}
       <nav>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
-        <Link to="/test">News</Link>
+        <Link to="/news">News</Link>
       </nav>
       <p>&copy; 2020 Southwater Village Preschool</p>
     </footer>

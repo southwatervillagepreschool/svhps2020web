@@ -26,7 +26,7 @@ const Header = () => {
         <Link activeClassName="active" to="/contact">
           Contact Us
         </Link>
-        <Link activeClassName="active" to="/test">
+        <Link activeClassName="active" to="/news">
           News
         </Link>
       </nav>

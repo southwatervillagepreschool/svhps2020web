@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 const BG = styled(BackgroundImage)`
   grid-column: 1 / 4;
   width: 100%;
-  min-height: 50vh;
+  min-height: 65vh;
   background-position: center center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.3);
@@ -18,6 +18,7 @@ const BG = styled(BackgroundImage)`
 
   h2 {
     color: #fff;
+    text-align: center;
   }
 `
 
@@ -29,20 +30,17 @@ const InnerWrapper = styled.div`
   }
 `
 
-const BackgroundSection = ({ fluidImage, imageAlt, tagLine, className }) => {
+const BackgroundSection = ({ fluidImage, tagLine, showButton = false }) => {
   return (
-    <BG
-      Tag="section"
-      //   className={className}
-      fluid={fluidImage}
-      //   backgroundColor={`#040e18`}
-    >
+    <BG Tag="section" fluid={fluidImage}>
       <InnerWrapper>
-        <h2>{tagLine}</h2>
+        <h2 className='hero__h2'>{tagLine}</h2>
       </InnerWrapper>
-      <Link className="call-to-action" to="/contact">
-        Contact Us
-      </Link>
+      {showButton && (
+        <Link className="call-to-action" to="/contact">
+          Contact Us
+        </Link>
+      )}
     </BG>
   )
 }
