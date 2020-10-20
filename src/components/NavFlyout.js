@@ -133,7 +133,8 @@ export default NavFlyout
 const Container = styled.div`
   box-sizing: border-box;
 
-  background: #ff5a46;
+  /* background: #ff5a46; */
+  background: rgb(184, 7, 42);
   width: 50vw;
   height: 100vh;
   left: +100vw;

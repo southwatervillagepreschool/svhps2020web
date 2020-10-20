@@ -34,11 +34,11 @@ const NavLargeScreens = () => {
               const { frontmatter } = singleArticle.childMarkdownRemark
               const { title } = frontmatter
               const formattedTitle = title
-                ? title.replace(/ /g, "_").toLowerCase()
+                ? title.replace(/ /g, "-").toLowerCase()
                 : ""
               return (
                 <li key={title}>
-                  <Link to={`/about#${formattedTitle}`}>{title}</Link>
+                  <Link to={`/about/${formattedTitle}`}>{title}</Link>
                 </li>
               )
             })}
