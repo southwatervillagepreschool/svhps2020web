@@ -3,16 +3,14 @@ title: Fees
 order: 6
 ---
 
-![children activity](../../images/086.jpg)
-
 #### Fees for under 3s and for children accessing hours above the funded 15 hours from September 2020.
 
-| | |
-| ----------------- | ----------- |
-| Morning Session   | £18.00      |
-| Lunch Link        | £6.75       |
-| Afternoon Session | £18.00      |
-| Adhoc Session     | £19.00      |
+|                   |        |
+| ----------------- | ------ |
+| Morning Session   | £18.00 |
+| Lunch Link        | £6.75  |
+| Afternoon Session | £18.00 |
+| Adhoc Session     | £19.00 |
 
 Fees are due in by the end of the second week of the term. Unfortunately, we are unable to give refunds if for any reason a child is unable to attend. If fees are not paid promptly, the committee reserve the right to refuse your child a place.
 
@@ -21,6 +19,8 @@ We are happy to take online payments (please show the name of child) or Employee
 If you pay by cash or cheque then these should always be in a sealed envelope with your child’s name clearly marked on the front. Please also write ‘fees’ on the front of the envelope.
 
 ### Lunch Link
+
+![children activity](../../images/086.jpg)
 
 We have introduced a Lunch Link session for over 3s, which provides the option for children to eat their lunch at Pre-School. The experience of eating lunch in the Pre-School setting helps to develop children’s social skills and independence before they move on to ‘big school’.
 

@@ -11,11 +11,11 @@ const ForAbout = ({ data }) => {
         <Hero
           fluidImage={data.file.childImageSharp.fluid}
           imageAlt=""
-          tagLine="WHERE LEARNING IS FUN"
+          tagLine={ post.frontmatter.title}
         />
         <article>
           {/* working {JSON.stringify(data)} */}
-          <h2>{post.frontmatter.title}</h2>
+          {/* <h2>{post.frontmatter.title}</h2> */}
           <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
         </article>
       </Layout>

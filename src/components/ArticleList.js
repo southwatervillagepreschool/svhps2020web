@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 const ArticleList = ({ listOfArticles }) => {
   return (
     <nav>
@@ -8,11 +8,12 @@ const ArticleList = ({ listOfArticles }) => {
           const { frontmatter } = singleArticle.childMarkdownRemark
           const { title } = frontmatter
           const formattedTitle = title
-            ? title.replace(/ /g, "_").toLowerCase()
+            ? title.replace(/ /g, "-").toLowerCase()
             : ""
           return (
             <li key={title}>
-              <a href={`#${formattedTitle}`}>{title}</a>
+              <Link to={`/about/${formattedTitle}`}>{title}</Link>
+              {/* <link to={`/about/${formattedTitle}`}>{title}</link> */}
             </li>
           )
         })}

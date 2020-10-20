@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react"
 import styled from "styled-components"
-import { navigate, useStaticQuery, graphql } from "gatsby"
+import { navigate, useStaticQuery, graphql, Link } from "gatsby"
 import { useLocation } from "@reach/router"
 import { NavContext, NavDispatchContext } from "../NavigationProviders"
 
@@ -40,7 +40,7 @@ const NavFlyout = () => {
     console.log(`you clicked:${(e, value)}`)
     const splitPathname = value.split("#")
     if (pathname === splitPathname[0]) {
-      console.log("toggle fsaffdsdfs")
+      // console.log("toggle fsaffdsdfs")
       setNavStatus()
       if (splitPathname[1]) {
         navigate(`#${splitPathname[1]}`)
@@ -81,18 +81,18 @@ const NavFlyout = () => {
               const { frontmatter } = singleArticle.childMarkdownRemark
               const { title } = frontmatter
               const formattedTitle = title
-                ? title.replace(/ /g, "_").toLowerCase()
+                ? title.replace(/ /g, "-").toLowerCase()
                 : ""
               return (
                 <li key={title}>
-                  <a
-                    href={`#${formattedTitle}`}
-                    onClick={e =>
-                      handleLinkClick(e, `/about#${formattedTitle}`)
-                    }
+                  <Link
+                    to={`/about/${formattedTitle}`}
+                    // onClick={e =>
+                    //   handleLinkClick(e, `/about/${formattedTitle}`)
+                    // }
                   >
                     {title}
-                  </a>
+                  </Link>
                 </li>
               )
             })}

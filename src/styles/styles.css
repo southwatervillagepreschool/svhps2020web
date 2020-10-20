@@ -296,6 +296,7 @@ h3 {
   font-size: var(--font-size-h3);
   color: var(--color-gray-200);
   text-transform: capitalize;
+  text-align: center;
 }
 
 h4 {
@@ -325,13 +326,13 @@ article h5 {
 article h2 {
   text-transform: uppercase;
   margin: 6rem 0;
-  /* background: var(--color-gray-1000); */
-  /* border-left: 6px solid var(--color-red); */
-  /* padding: 6px 0 0 6px; */
-  /* display: flex;
-  justify-content: flex-end;
-  align-items: center; */
 }
+article h2:nth-child(1) {
+  text-transform: uppercase;
+  margin: 6rem 0;
+  text-align: center;
+}
+
 article a {
   /* border: none; */
   margin: 2rem 0;

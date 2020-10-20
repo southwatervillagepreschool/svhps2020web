@@ -3,8 +3,6 @@ title: early years foundation stage (EYFS)
 order: 2
 ---
 
-![children visiting local shop](../../images/contact.jpg)
-
 The provisions for children’s development and learning is guided by the Early Years Foundation Stage (DfE 2012). Our provision reflects the four overarching principles of the Statutory Framework for the Early Years Foundation Stage.
 
 ### the four key themes within the EYFS are:
@@ -30,6 +28,8 @@ The provisions for children’s development and learning is guided by the Early 
 - Mathematics
 - Understanding the world
 - Expressive arts and design
+
+![children visiting local shop](../../images/contact.jpg)
 
 None of the areas of learning and development can be delivered in isolation from the others. They are equally important and depend upon each other to support a rounded approach to child development. All the areas must be delivered through planned purposeful play, with a balance of adult-led and child initiated play.
 We aim to achieve the following:
