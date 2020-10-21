@@ -1,6 +1,6 @@
 ---
 title: early years foundation stage (EYFS)
-order: 2
+order: 3
 ---
 
 The provisions for children’s development and learning is guided by the Early Years Foundation Stage (DfE 2012). Our provision reflects the four overarching principles of the Statutory Framework for the Early Years Foundation Stage.

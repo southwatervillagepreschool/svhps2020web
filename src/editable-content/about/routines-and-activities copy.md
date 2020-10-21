@@ -1,7 +1,7 @@
 ---
 title: Routines and Activities
 image: 006.jpg
-order: 3
+order: 7
 ---
 
 [View Example of our Routines and Activities](/Routines-and-Activities.pdf)

@@ -1,6 +1,6 @@
 ---
 title: Term Dates
-order: 5
+order: 8
 ---
 
 ### Autumn Term 2020

@@ -1,7 +1,7 @@
 ---
 title: Key Person Scheme
 image: ../../images/preschool-2.jpg
-order: 4
+order: 5
 ---
 
 We hold consultation meetings with parents to talk about your child’s progress.

@@ -1,6 +1,6 @@
 ---
 title: Fees
-order: 6
+order: 4
 ---
 
 #### Fees for under 3s and for children accessing hours above the funded 15 hours from September 2020.

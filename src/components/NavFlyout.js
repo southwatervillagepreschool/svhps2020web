@@ -10,9 +10,12 @@ const NavFlyout = () => {
   const navStatus = useContext(NavContext)
   const setNavStatus = useContext(NavDispatchContext)
   const data = useStaticQuery(graphql`
-    query {
+    {
       allFile(
-        filter: { sourceInstanceName: { eq: "aboutPage" } }
+        filter: {
+          sourceInstanceName: { eq: "aboutPage" }
+          childMarkdownRemark: { frontmatter: { order: { gt: 0 } } }
+        }
         sort: { fields: childMarkdownRemark___frontmatter___order, order: ASC }
       ) {
         nodes {
@@ -26,7 +29,6 @@ const NavFlyout = () => {
       }
     }
   `)
-
   const { pathname } = useLocation()
 
   const handleToggle = e => {
@@ -56,7 +58,8 @@ const NavFlyout = () => {
     e.preventDefault()
     setNavStatus()
   }
-  console.log(JSON.stringify(data))
+  // console.log(JSON.stringify(data.allFile.edges, null, 4))
+  // console.log(aboutIsOpen)
   return (
     <Container className={navStatus ? "open" : ""}>
       <button onClick={e => close(e)}>X</button>
@@ -83,14 +86,7 @@ const NavFlyout = () => {
                 : ""
               return (
                 <li key={title}>
-                  <Link
-                    to={`/about/${formattedTitle}`}
-                    // onClick={e =>
-                    //   handleLinkClick(e, `/about/${formattedTitle}`)
-                    // }
-                  >
-                    {title}
-                  </Link>
+                  <Link to={`/about/${formattedTitle}`}>{title}</Link>
                 </li>
               )
             })}
@@ -158,7 +154,7 @@ const Container = styled.div`
     background: inherit;
     color: #fff;
     font-size: 1.2rem;
-    z-index:12;
+    z-index: 12;
   }
 `
 

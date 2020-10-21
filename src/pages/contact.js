@@ -62,30 +62,32 @@ const Contact = () => {
         imageAlt=""
         tagLine="Contact us"
       />
-      <Section>
-        <Address>
-          <a href="mailto:southwaterpreschool@hotmail.co.uk">
-            southwaterpreschool@hotmail.co.uk
-          </a>
-          <a href="tel:01403733954">01403 733954</a>
-          <p>
-            Southwater Village Hall Pre-School <br /> Church Lane <br />
-            Southwater <br /> West Sussex <br /> RH13 9BT
-          </p>
-        </Address>
-      </Section>
-      <Section>
-        <iframe
-          title="southwater village preschool"
-          width="100%"
-          height="600"
-          frameborder="0"
-          scrolling="no"
-          marginheight="0"
-          marginwidth="0"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=southwater%20village%20hall+(Southwater%20Village%20Preschool)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        ></iframe>
-      </Section>
+      <article>
+        <Section>
+          <Address>
+            <a href="mailto:southwaterpreschool@hotmail.co.uk">
+              southwaterpreschool@hotmail.co.uk
+            </a>
+            <a href="tel:01403733954">01403 733954</a>
+            <p>
+              Southwater Village Hall Pre-School <br /> Church Lane <br />
+              Southwater <br /> West Sussex <br /> RH13 9BT
+            </p>
+          </Address>
+        </Section>
+        <Section>
+          <iframe
+            title="southwater village preschool"
+            width="100%"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=southwater%20village%20hall+(Southwater%20Village%20Preschool)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+        </Section>
+      </article>
       <PageArticles listOfArticles={articles} />
     </Layout>
   )
