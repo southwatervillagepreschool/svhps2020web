@@ -5,9 +5,12 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 
 const NavLargeScreens = () => {
   const data = useStaticQuery(graphql`
-    query {
+    {
       allFile(
-        filter: { sourceInstanceName: { eq: "aboutPage" } }
+        filter: {
+          sourceInstanceName: { eq: "aboutPage" }
+          childMarkdownRemark: { frontmatter: { order: { gt: 0 } } }
+        }
         sort: { fields: childMarkdownRemark___frontmatter___order, order: ASC }
       ) {
         nodes {
