@@ -18,6 +18,7 @@ const News = () => {
               title
               date
               author
+              order
             }
             html
           }

@@ -1,5 +1,6 @@
 ---
 title: about us
+image: 001.jpg
 order: 1
 ---
 

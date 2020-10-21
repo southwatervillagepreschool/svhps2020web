@@ -2,9 +2,7 @@ import React from "react"
 import logo from "../images/Ofsted_Good_GP_Colour.jpg"
 import { useLocation } from "@reach/router"
 import { Helmet } from "react-helmet"
-// import "../styles/normalize.css"
-// import "../styles/main.css"
-// import "../styles/styles.css"
+
 
 import Header from "./Header"
 import Footer from "./Footer"
@@ -14,7 +12,7 @@ import { NavProvider } from "../NavigationProviders"
 
 const Layout = ({ children }) => {
   const { pathname } = useLocation()
-  // console.log(pathname)
+
   return (
     <NavProvider>
       <Helmet>

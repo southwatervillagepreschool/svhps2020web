@@ -29,7 +29,7 @@ const NavLargeScreens = () => {
         </li>
         <li>
           <Link to="/about">About</Link>
-          <ul class="dropdown">
+          <ul>
             {data.allFile.nodes.map(singleArticle => {
               const { frontmatter } = singleArticle.childMarkdownRemark
               const { title } = frontmatter

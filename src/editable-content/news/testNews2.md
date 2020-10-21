@@ -2,6 +2,7 @@
 title:  test News 2
 date: 2020-12-15
 author: none
+order: 0
 ---
 
 Our AGM will be Held on 2020-12-15

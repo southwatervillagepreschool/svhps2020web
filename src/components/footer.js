@@ -6,11 +6,11 @@ const Footer = () => {
   return (
     <footer>
       {/* <Link to="/about"> */}
-        <img src={logo} alt="" className="logo" />
+      <img src={logo} alt="" className="logo" />
       {/* </Link> */}
       <nav>
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/about/about-us">About</Link>
         <Link to="/contact">Contact</Link>
         <Link to="/news">News</Link>
       </nav>

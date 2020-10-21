@@ -5,13 +5,16 @@ import { graphql } from "gatsby"
 
 const ForAbout = ({ data }) => {
   const post = data.markdownRemark
+
+  // console.log(post.frontmatter.hideHero || "not shone")
+
   return (
     <div>
       <Layout>
         <Hero
           fluidImage={data.file.childImageSharp.fluid}
           imageAlt=""
-          tagLine={ post.frontmatter.title}
+          tagLine={post.frontmatter.title}
         />
         <article>
           {/* working {JSON.stringify(data)} */}
@@ -31,6 +34,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        hideHero
       }
     }
 

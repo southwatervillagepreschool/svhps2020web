@@ -1,13 +1,13 @@
 import React from "react"
 
 const NewsArticles = ({ listOfArticles }) => {
-  // const filteredList = listOfArticles.filter(
-  //   a => a.childMarkdownRemark.frontmatter.order >= 1
-  // )
-
+  const filteredList = listOfArticles.filter(
+    a => a.childMarkdownRemark.frontmatter.order >= 1
+  )
+  console.log(listOfArticles)
   return (
     <>
-      {listOfArticles.map(singleArticle => {
+      {filteredList.map(singleArticle => {
         const { frontmatter, html } = singleArticle.childMarkdownRemark
         const { title } = frontmatter
         const formattedTitle = title

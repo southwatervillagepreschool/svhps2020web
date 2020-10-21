@@ -1,5 +1,6 @@
 ---
 title: Key Person Scheme
+image: ../../images/preschool-2.jpg
 order: 4
 ---
 

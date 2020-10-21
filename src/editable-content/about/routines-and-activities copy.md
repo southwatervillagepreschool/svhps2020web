@@ -1,5 +1,6 @@
 ---
 title: Routines and Activities
+image: 006.jpg
 order: 3
 ---
 

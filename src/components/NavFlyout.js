@@ -35,36 +35,34 @@ const NavFlyout = () => {
     toggleAbout(currentState => !currentState)
   }
 
-  const handleLinkClick = (e, value) => {
-    e.preventDefault()
-    console.log(`you clicked:${(e, value)}`)
-    const splitPathname = value.split("#")
-    if (pathname === splitPathname[0]) {
-      // console.log("toggle fsaffdsdfs")
-      setNavStatus()
-      if (splitPathname[1]) {
-        navigate(`#${splitPathname[1]}`)
-      }
-    } else {
-      navigate(value)
-    }
+  // const handleLinkClick = (e, value) => {
+  //   e.preventDefault()
+  //   console.log(`you clicked:${(e, value)}`)
+  //   const splitPathname = value.split("#")
+  //   if (pathname === splitPathname[0]) {
+  //     // console.log("toggle fsaffdsdfs")
+  //     setNavStatus()
+  //     if (splitPathname[1]) {
+  //       navigate(`#${splitPathname[1]}`)
+  //     }
+  //   } else {
+  //     navigate(value)
+  //   }
 
-    // setTimeout(() => navigate(value), 200)
-  }
+  //   // setTimeout(() => navigate(value), 200)
+  // }
 
   const close = e => {
     e.preventDefault()
     setNavStatus()
   }
-  // console.log(JSON.stringify(data))
+  console.log(JSON.stringify(data))
   return (
     <Container className={navStatus ? "open" : ""}>
       <button onClick={e => close(e)}>X</button>
       <List>
         <li>
-          <a href="/" onClick={e => handleLinkClick(e, "/")}>
-            home
-          </a>
+          <Link to="/">home</Link>
         </li>
 
         <li>
@@ -100,18 +98,12 @@ const NavFlyout = () => {
         </li>
 
         <li>
-          <a href="/news" onClick={e => handleLinkClick(e, "/news")}>
-            News
-          </a>
+          <Link to="/news">News</Link>
         </li>
         <li>
-          <a
-            href="/contact"
-            className="contact-us"
-            onClick={e => handleLinkClick(e, "/contact")}
-          >
+          <Link to="/contact" className="contact-us">
             contact
-          </a>
+          </Link>
         </li>
       </List>
     </Container>
@@ -160,12 +152,13 @@ const Container = styled.div`
     position: absolute;
     top: 10px;
     right: 10px;
-    /* border: solid white 1px; */
+    border: solid white 1px;
     box-shadow: none;
     border: none;
     background: inherit;
     color: #fff;
     font-size: 1.2rem;
+    z-index:12;
   }
 `
 
