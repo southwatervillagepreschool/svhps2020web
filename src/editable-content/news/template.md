@@ -1,5 +1,5 @@
 ---
-title: Template for News item.
+title: Template for News item
 date: 2020-09-12
 author: none
 order: 0 # 0 means it will not show up.
