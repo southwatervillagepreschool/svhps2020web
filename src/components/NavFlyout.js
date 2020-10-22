@@ -1,7 +1,8 @@
 import React, { useContext, useState } from "react"
 import styled from "styled-components"
-import { navigate, useStaticQuery, graphql, Link } from "gatsby"
-import { useLocation } from "@reach/router"
+import { useStaticQuery, graphql, Link } from "gatsby"
+// import { navigate, useStaticQuery, graphql, Link } from "gatsby"
+// import { useLocation } from "@reach/router"
 import { NavContext, NavDispatchContext } from "../NavigationProviders"
 
 const NavFlyout = () => {
@@ -29,7 +30,7 @@ const NavFlyout = () => {
       }
     }
   `)
-  const { pathname } = useLocation()
+  // const { pathname } = useLocation()
 
   const handleToggle = e => {
     e.preventDefault()
