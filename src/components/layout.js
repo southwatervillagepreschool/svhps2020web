@@ -3,10 +3,10 @@ import logo from "../images/Ofsted_Good_GP_Colour.jpg"
 import { useLocation } from "@reach/router"
 import { Helmet } from "react-helmet"
 
-
 import Header from "./Header"
 import Footer from "./Footer"
 import NavFlyout from "./NavFlyout"
+import OfstedLogo from "./ofsted-logo"
 
 import { NavProvider } from "../NavigationProviders"
 
@@ -20,14 +20,21 @@ const Layout = ({ children }) => {
         <title>{pathname.replace("/", "") || "home"}</title>
         <link
           rel="canonical"
-          href="https://southwatervillagepreschool.github.io/svhps2020web/"
+          href="https://www.southwatervillagepreschool.org/"
         />
+        <html lang="en" />
       </Helmet>
       <NavFlyout />
       <Header />
       {/* <h2>{JSON.stringify(location)}</h2> */}
       <main>{children}</main>
-      <img className="logo-ofsted" src={logo} alt="" />
+      {/* <img
+        style={{ height: "100px", width: "100px" }}
+        className="logo-ofsted"
+        src={logo}
+        alt="OFSTED rated Good "
+      /> */}
+      <OfstedLogo />
       <Footer />
     </NavProvider>
   )

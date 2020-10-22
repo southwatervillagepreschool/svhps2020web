@@ -18,6 +18,7 @@ const MenuButton = () => {
   }
   return (
     <button
+      
       onClick={() => handleClick()}
       className={toggle ? "nav__toggle nav-open" : "nav__toggle"}
     >

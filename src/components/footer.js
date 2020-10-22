@@ -1,13 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import logo from "../images/logo-square-no-words.png"
+// import logo from "../images/logo-square-no-words.png"
+import logo from "../images/logo-square-transparent.svg"
 const Footer = () => {
   return (
     <footer>
-      {/* <Link to="/about"> */}
-      <img src={logo} alt="" className="logo" />
-      {/* </Link> */}
+      <img
+        style={{ height: "80px", width: "80px" }}
+        src={logo}
+        alt=""
+        className="logo"
+      />
+
       <nav>
         <Link to="/">Home</Link>
         <Link to="/about/about-us">About</Link>
