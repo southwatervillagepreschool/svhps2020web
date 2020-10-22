@@ -33,7 +33,7 @@ const NavFlyout = () => {
 
   const handleToggle = e => {
     e.preventDefault()
-    console.log("toggle", aboutIsOpen)
+    // console.log("toggle", aboutIsOpen)
     toggleAbout(currentState => !currentState)
   }
 

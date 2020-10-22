@@ -8,7 +8,7 @@ const MenuButton = () => {
   const navStatus = useContext(NavContext)
   const setNavStatus = useContext(NavDispatchContext)
   
-  console.log("status:", navStatus)
+  // console.log("status:", navStatus)
   const [toggle, setToggle] = useState(navStatus)
 
   const handleClick = () => {

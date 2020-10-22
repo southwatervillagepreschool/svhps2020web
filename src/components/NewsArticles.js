@@ -4,7 +4,7 @@ const NewsArticles = ({ listOfArticles }) => {
   const filteredList = listOfArticles.filter(
     a => a.childMarkdownRemark.frontmatter.order >= 1
   )
-  console.log(listOfArticles)
+  // console.log(listOfArticles)
   return (
     <>
       {filteredList.map(singleArticle => {
