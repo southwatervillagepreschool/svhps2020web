@@ -37,7 +37,10 @@ exports.createPages = async ({ graphql, actions }) => {
   //   console.log(JSON.stringify(result, null, 4))
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: `/about/${node.frontmatter.title.replace(/ /g, '-').toLowerCase()}`,
+      path: `/about/${node.frontmatter.title
+        .replace(/ /g, "-")
+        .replace(/[.]/g, "")
+        .toLowerCase()}`,
       component: path.resolve("./src/templates/for-about.js"),
       context: {
         slug: node.fields.slug,
