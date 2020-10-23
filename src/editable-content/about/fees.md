@@ -32,4 +32,4 @@ Parents/Carers provide their child with a packed lunch in line with our Lunch Li
 
 In line with the current guidelines regarding funding, children are fully funded for up to five sessions per week (dependent on availability), from the term following their 3rd birthday.
 
-link Universal Free Entitlement Funding Policy
+[Universal Free Entitlement Funding Policy](/Universal-Free-Entitlement-Funding-Policy.pdf)
