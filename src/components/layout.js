@@ -1,5 +1,4 @@
 import React from "react"
-import logo from "../images/Ofsted_Good_GP_Colour.jpg"
 import { useLocation } from "@reach/router"
 import { Helmet } from "react-helmet"
 
@@ -26,14 +25,7 @@ const Layout = ({ children }) => {
       </Helmet>
       <NavFlyout />
       <Header />
-      {/* <h2>{JSON.stringify(location)}</h2> */}
       <main>{children}</main>
-      {/* <img
-        style={{ height: "100px", width: "100px" }}
-        className="logo-ofsted"
-        src={logo}
-        alt="OFSTED rated Good "
-      /> */}
       <OfstedLogo />
       <Footer />
     </NavProvider>
