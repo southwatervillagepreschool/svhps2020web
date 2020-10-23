@@ -12,7 +12,7 @@ const BG = styled(BackgroundImage)`
   min-height: calc(75vh - ${headerHeight});
   background-position: center center;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: darken;
   display: flex;
   flex-direction: column;
