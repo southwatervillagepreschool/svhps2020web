@@ -2,6 +2,9 @@ import React from "react"
 import { useLocation } from "@reach/router"
 import { Helmet } from "react-helmet"
 
+import "typeface-hind"
+import "typeface-roboto"
+
 import Header from "./Header"
 import Footer from "./Footer"
 import NavFlyout from "./NavFlyout"
