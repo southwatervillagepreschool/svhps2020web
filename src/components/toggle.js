@@ -1,17 +1,17 @@
-import React from "react";
-import { connect } from "react-redux";
+import React, { useEffect } from "react"
+import { connect } from "react-redux"
 
-const Toggle = ({ messageVisibility, dispatch }) => {
-  return (
-    <div>
-      <h1>{messageVisibility.toString()}</h1>
-      <button onClick={()=>dispatch({type:'TOGGLE_MESSAGE'})}>Toggle me</button>
-    </div>
-  );
-};
+const Toggle = ({ navVisibility, dispatch }) => {
+  useEffect(() => {
+    if (navVisibility) {
+      dispatch({ type: "CLOSE_NAV" })
+    }
+  }, [dispatch])
+  return <></>
+}
 
-const mapStateToProps = (state) => ({
-  messageVisibility: state.message.messageVisibility,
-});
+const mapStateToProps = state => ({
+  navVisibility: state.message.navVisibility,
+})
 
-export default connect(mapStateToProps)(Toggle);
+export default connect(mapStateToProps)(Toggle)

@@ -9,14 +9,16 @@ import Header from "./Header"
 import Footer from "./Footer"
 import NavFlyout from "./NavFlyout"
 import OfstedLogo from "./ofsted-logo"
+import Toggle from "../components/toggle"
 
-import { NavProvider } from "../NavigationProviders"
+// import { NavProvider } from "../NavigationProviders"
 
 const Layout = ({ children }) => {
   const { pathname } = useLocation()
 
   return (
-    <NavProvider>
+    <div>
+      <Toggle />
       <Helmet>
         <meta charSet="utf-8" />
         <title>{pathname.replace("/", "") || "home"}</title>
@@ -31,7 +33,7 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <OfstedLogo />
       <Footer />
-    </NavProvider>
+    </div>
   )
 }
 

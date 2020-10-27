@@ -1,15 +1,13 @@
-import React, { useContext, useState } from "react"
-import styled from "styled-components"
-import { useStaticQuery, graphql, Link } from "gatsby"
-// import { navigate, useStaticQuery, graphql, Link } from "gatsby"
-// import { useLocation } from "@reach/router"
-import { NavContext, NavDispatchContext } from "../NavigationProviders"
+import React, { useState } from "react"
+import { connect } from "react-redux"
 
-const NavFlyout = () => {
+import styled from "styled-components"
+import { useStaticQuery, graphql, navigate } from "gatsby"
+import { useLocation } from "@reach/router"
+
+const NavFlyout = ({ navVisibility, dispatch }) => {
   const [aboutIsOpen, toggleAbout] = useState(false)
 
-  const navStatus = useContext(NavContext)
-  const setNavStatus = useContext(NavDispatchContext)
   const data = useStaticQuery(graphql`
     {
       allFile(
@@ -30,43 +28,37 @@ const NavFlyout = () => {
       }
     }
   `)
-  // const { pathname } = useLocation()
+
+  const { pathname } = useLocation()
+
+  const handleNavigation = (e, route) => {
+    e.preventDefault()
+    if (pathname !== route) {
+      // dispatch({ type: "CLOSE_NAV" })
+      navigate(route)
+    } else {
+      dispatch({ type: "CLOSE_NAV" })
+    }
+  }
 
   const handleToggle = e => {
     e.preventDefault()
-    // console.log("toggle", aboutIsOpen)
     toggleAbout(currentState => !currentState)
   }
 
-  // const handleLinkClick = (e, value) => {
-  //   e.preventDefault()
-  //   console.log(`you clicked:${(e, value)}`)
-  //   const splitPathname = value.split("#")
-  //   if (pathname === splitPathname[0]) {
-  //     // console.log("toggle fsaffdsdfs")
-  //     setNavStatus()
-  //     if (splitPathname[1]) {
-  //       navigate(`#${splitPathname[1]}`)
-  //     }
-  //   } else {
-  //     navigate(value)
-  //   }
-
-  //   // setTimeout(() => navigate(value), 200)
-  // }
-
-  const close = e => {
-    e.preventDefault()
-    setNavStatus()
-  }
-  // console.log(JSON.stringify(data.allFile.edges, null, 4))
-  // console.log(aboutIsOpen)
   return (
-    <Container className={navStatus ? "open" : ""}>
-      <button onClick={e => close(e)}>X</button>
+    <Container className={navVisibility ? "open" : ""}>
+      <button
+        onClick={() => dispatch({ type: "TOGGLE_NAV" })}
+        className={navVisibility ? "nav__toggle nav-open" : "nav__toggle"}
+      >
+        <div className="hamburger"></div>
+      </button>
       <List>
         <li>
-          <Link to="/">home</Link>
+          <a href="/" onClick={e => handleNavigation(e, "/")}>
+            Home
+          </a>
         </li>
 
         <li>
@@ -87,7 +79,14 @@ const NavFlyout = () => {
                 : ""
               return (
                 <li key={title}>
-                  <Link to={`/about/${formattedTitle}`}>{title}</Link>
+                  <a
+                    href={`/about/${formattedTitle}`}
+                    onClick={e =>
+                      handleNavigation(e, `/about/${formattedTitle}`)
+                    }
+                  >
+                    {title}
+                  </a>
                 </li>
               )
             })}
@@ -95,30 +94,25 @@ const NavFlyout = () => {
         </li>
 
         <li>
-          <Link to="/news">News</Link>
+          <a href="/news" onClick={e => handleNavigation(e, "/news")}>
+            News
+          </a>
         </li>
         <li>
-          <Link to="/contact" className="contact-us">
-            contact
-          </Link>
+          <a href="/contact" onClick={e => handleNavigation(e, "/contact")}>
+            Contact
+          </a>
         </li>
       </List>
     </Container>
   )
 }
 
-export default NavFlyout
+const mapStateToProps = state => ({
+  navVisibility: state.message.navVisibility,
+})
+export default connect(mapStateToProps)(NavFlyout)
 
-// const About=({toggle})=>{
-// return (
-//   <li
-//     className="about"
-//     onClick={() => toggleAbout(currentState => !currentState)}
-//   >
-//     about
-//   </li>
-// )
-// }
 const Container = styled.div`
   box-sizing: border-box;
 
