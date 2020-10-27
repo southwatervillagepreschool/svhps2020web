@@ -25,7 +25,7 @@ module.exports = {
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: "standalone",
-        icon: "src/images/icon.svg", // This path is relative to the root of the site.
+        icon: "src/images/icon2.svg", // This path is relative to the root of the site.
         // An optional attribute which provides support for CORS check.
         // If you do not provide a crossOrigin option, it will skip CORS for manifest.
         // Any invalid keyword or empty string defaults to `anonymous`
@@ -36,7 +36,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/about/*`, `/contact/`],
+        precachePages: [
+          `/about/welcome-to-our-preschool/`,
+          `/about/term-dates/`,
+          `/about/routines-and-activities/`,
+          `/about/key-person-scheme/`,
+          `/about/fees/`,
+          `/about/early-years-foundation-stage-(eyfs)/`,
+          `/about/about-us/`,
+          `/about/corvid-19/`,
+          `/contact/`,
+          `/news/`,
+        ],
       },
     },
     {
