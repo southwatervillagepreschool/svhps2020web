@@ -33,23 +33,23 @@ module.exports = {
         // cache_busting_mode: "none",
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [
-          `/about/welcome-to-our-preschool/`,
-          `/about/term-dates/`,
-          `/about/routines-and-activities/`,
-          `/about/key-person-scheme/`,
-          `/about/fees/`,
-          `/about/early-years-foundation-stage-(eyfs)/`,
-          `/about/about-us/`,
-          `/about/corvid-19/`,
-          `/contact/`,
-          `/news/`,
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-offline`,
+    //   options: {
+    //     precachePages: [
+    //       `/about/welcome-to-our-preschool/`,
+    //       `/about/term-dates/`,
+    //       `/about/routines-and-activities/`,
+    //       `/about/key-person-scheme/`,
+    //       `/about/fees/`,
+    //       `/about/early-years-foundation-stage-(eyfs)/`,
+    //       `/about/about-us/`,
+    //       `/about/corvid-19/`,
+    //       `/contact/`,
+    //       `/news/`,
+    //     ],
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
