@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import { connect } from "react-redux"
 
+import { motion, AnimatePresence } from "framer-motion"
+
 import styled from "styled-components"
 import { useStaticQuery, graphql, navigate } from "gatsby"
 import { useLocation } from "@reach/router"
@@ -33,6 +35,7 @@ const NavFlyout = ({ navVisibility, dispatch }) => {
 
   const handleNavigation = (e, route) => {
     e.preventDefault()
+    toggleAbout(false)
     if (pathname !== route) {
       // dispatch({ type: "CLOSE_NAV" })
       navigate(route)
@@ -69,28 +72,46 @@ const NavFlyout = ({ navVisibility, dispatch }) => {
           >
             About
           </a>
-
-          <ul className={aboutIsOpen ? "about-list open" : "about-list"}>
-            {data.allFile.nodes.map(singleArticle => {
-              const { frontmatter } = singleArticle.childMarkdownRemark
-              const { title } = frontmatter
-              const formattedTitle = title
-                ? title.replace(/ /g, "-").toLowerCase()
-                : ""
-              return (
-                <li key={title}>
-                  <a
-                    href={`/about/${formattedTitle}`}
-                    onClick={e =>
-                      handleNavigation(e, `/about/${formattedTitle}`)
-                    }
-                  >
-                    {title}
-                  </a>
-                </li>
-              )
-            })}
-          </ul>
+          <AnimatePresence>
+            {aboutIsOpen && (
+              <motion.ul
+                className="about-list "
+                initial={{
+                  // visibility: "hidden",
+                  opacity: 0,
+                }}
+                animate={{
+                  // visibility: "visible",
+                  opacity: 1,
+                  transition: 2,
+                }}
+                exit={{
+                  // visibility: "hidden",
+                  opacity: 0,
+                }}
+              >
+                {data.allFile.nodes.map(singleArticle => {
+                  const { frontmatter } = singleArticle.childMarkdownRemark
+                  const { title } = frontmatter
+                  const formattedTitle = title
+                    ? title.replace(/ /g, "-").toLowerCase()
+                    : ""
+                  return (
+                    <li key={title}>
+                      <a
+                        href={`/about/${formattedTitle}`}
+                        onClick={e =>
+                          handleNavigation(e, `/about/${formattedTitle}`)
+                        }
+                      >
+                        {title}
+                      </a>
+                    </li>
+                  )
+                })}
+              </motion.ul>
+            )}
+          </AnimatePresence>
         </li>
 
         <li>
@@ -126,29 +147,31 @@ const Container = styled.div`
   position: fixed;
   /* opacity: 1; */
   transition: transform 250ms ease-in-out;
+
   &&.open {
     /* opacity: 1; */
     transform: translateX(-50vw);
   }
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: flex-start;
   padding-top: 16px;
   a {
     background: inherit;
     border: none;
   }
+
   button {
     position: absolute;
     top: 10px;
     right: 10px;
-    border: solid white 1px;
+    /* border: solid white 1px; */
     box-shadow: none;
     border: none;
     background: inherit;
     color: #fff;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     z-index: 12;
   }
 `
@@ -157,7 +180,7 @@ const List = styled.ul`
   /* border: solid #fff 2px; */
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
 
@@ -169,7 +192,7 @@ const List = styled.ul`
     list-style-type: none;
   }
 
-  .contact-usx {
+  /* .contact-usx {
     border-radius: 25px;
     border: solid 3px #fff;
     padding: 0.4em 0.6em;
@@ -181,7 +204,7 @@ const List = styled.ul`
       color: #ff5a46;
       border-color: #ff5a46;
     }
-  }
+  } */
 
   a {
     position: relative;
@@ -218,13 +241,13 @@ const List = styled.ul`
   }
 
   .about-list {
-    height: 0em;
-    opacity: 0;
+    /* height: 0em; */
+    /* opacity: 0; */
     padding-left: 16px;
-    transition: height 250ms ease-in-out, opacity 300ms ease-in-out;
+    /* transition: height 250ms ease-in-out, opacity 300ms ease-in-out; */
   }
   .open {
-    height: auto;
-    opacity: 1;
+    /* height: auto; */
+    /* opacity: 1; */
   }
 `
