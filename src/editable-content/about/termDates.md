@@ -21,7 +21,7 @@ order: 8
 
 ### Summer Term 2020
 
-|  |                                  |
+|                   |                                     |
 | ----------------- | ----------------------------------- |
 | First day of term | Monday 19th April                   |
 | Half Term         | Monday 31st May – Friday 4th June   |
@@ -29,10 +29,10 @@ order: 8
 
 ### Sessions
 
-| Day       | AM           | Lunch Link   | PM          |
-| --------- | ------------ | ------------ | ----------- |
-| Monday    | 9.15 – 12.15 | 9.15 – 12.15 | 1.00 – 4.00 |
-| Tuesday   | 9.15 – 12.15 | 9.15 – 12.15 | 1.00 – 4.00 |
-| Wednesday | 9.15 – 12.15 | N/A          | No session  |
-| Thursday  | 9.15 – 12.15 | 9.15 – 12.15 | 1.00 – 4.00 |
-| Friday    | 9.15 – 12.15 | N/A          | No session  |
+| Day       | AM               | Lunch Link    | PM              |
+| --------- | ---------------- | ------------- | --------------- |
+| Monday    | 9.15am – 12.15pm | 12.15pm – 1pm | 1.00pm – 4.00pm |
+| Tuesday   | 9.15am – 12.15pm | 12.15pm – 1pm | 1.00pm – 4.00pm |
+| Wednesday | 9.15am – 12.15pm | N/A           | No session      |
+| Thursday  | 9.15am – 12.15pm | 12.15pm – 1pm | 1.00pm – 4.00pm |
+| Friday    | 9.15am – 12.15pm | N/A           | No session      |
