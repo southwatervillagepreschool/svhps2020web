@@ -1,5 +1,5 @@
 ---
-title: corvid-19
+title: covid-19
 order: 2
 ---
 
