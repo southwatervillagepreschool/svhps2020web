@@ -1,9 +1,9 @@
 {
   "name": "southwater-village-preschool-website-2020",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
-  "license": "0BSD",
+  "description": "website for SVHPS",
+  "version": "1.0.1",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
