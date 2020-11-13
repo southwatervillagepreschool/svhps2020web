@@ -2,6 +2,7 @@ import React from "react"
 
 import styled from "styled-components"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import MenuButton from "./MenuButton"
 
 const NavLargeScreens = () => {
   const data = useStaticQuery(graphql`
@@ -47,16 +48,21 @@ const NavLargeScreens = () => {
             })}
           </ul>
         </li>
-        <li>
+        {/* <li>
           <Link to="/vacancies">Vacancies</Link>
         </li>
         <li>
           <Link to="/news">News</Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/contact">Contact</Link>
         </li>
+        {/* <li>
+          {" "}
+        </li> */}
       </ul>
+
+      <MenuButton />
     </Nav>
   )
 }

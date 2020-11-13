@@ -120,6 +120,14 @@ const NavFlyout = ({ navVisibility, dispatch }) => {
           </a>
         </li>
         <li>
+          <a
+            href="/virtual-tour"
+            onClick={e => handleNavigation(e, "/virtual-tour")}
+          >
+            Virtual Tour
+          </a>
+        </li>
+        <li>
           <a href="/news" onClick={e => handleNavigation(e, "/news")}>
             News
           </a>

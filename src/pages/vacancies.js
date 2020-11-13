@@ -2,9 +2,10 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Hero2 from "../components/Hero"
-import PageArticles from "../components/PageArticles"
+// import PageArticles from "../components/PageArticles"
+import { Link } from "gatsby"
 
-import ArticleList from "../components/ArticleList"
+// import ArticleList from "../components/ArticleList"
 // import { NavDispatchContext } from "../NavigationProviders"
 
 const About = () => {
@@ -23,6 +24,7 @@ const About = () => {
             frontmatter {
               title
               order
+              pdf
             }
             html
           }
@@ -38,7 +40,7 @@ const About = () => {
     }
   `)
 
-  const articles = [...data.allFile.nodes]
+  const vacancies = [...data.allFile.nodes]
   return (
     <Layout>
       <Hero2
@@ -46,8 +48,25 @@ const About = () => {
         imageAlt=""
         tagLine="Vacancies"
       />
-      <ArticleList listOfArticles={articles} />
-      <PageArticles listOfArticles={articles} />
+      <article>
+        <h3>We currently have the following Vacancies</h3>
+        {/* <PageArticles listOfArticles={articles} /> */}
+        <p>
+          Due to current COVID-19 restrictions we are unable to offer visits but
+          there is a <Link to="/virtual-tour">virtual tour</Link>.
+        </p>
+
+        <ul>
+          {vacancies.map(vacancy => (
+            <li key={vacancy.childMarkdownRemark.frontmatter.title}>
+              <a href={vacancy.childMarkdownRemark.frontmatter.pdf}>
+                {vacancy.childMarkdownRemark.frontmatter.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+        {/* <ArticleList listOfArticles={articles} /> */}
+      </article>
     </Layout>
   )
 }

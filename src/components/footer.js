@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-
 // import logo from "../images/logo-square-no-words.png"
 import logo from "../images/logo-square-transparent.svg"
 const Footer = () => {
@@ -16,12 +15,12 @@ const Footer = () => {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/about/about-us">About</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/vacancies">Vacancies</Link>
         <Link to="/news">News</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
       <p>&copy; 2020 Southwater Village Preschool</p>
       <p>Registered Charity 1027293</p>
-  
     </footer>
   )
 }
