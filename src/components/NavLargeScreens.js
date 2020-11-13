@@ -48,6 +48,9 @@ const NavLargeScreens = () => {
           </ul>
         </li>
         <li>
+          <Link to="/vacancies">Vacancies</Link>
+        </li>
+        <li>
           <Link to="/news">News</Link>
         </li>
         <li>
