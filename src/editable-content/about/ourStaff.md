@@ -8,16 +8,15 @@ The staff are professionally trained or are currently studying for relevant qual
 
 A daily staff rota is displayed on the parent notice board in the preschool.
 
-|                                                                     |                   |
-| ------------------------------------------------------------------- | ----------------- |
-| Manager, Designated Safeguarding and Child Protection Officer       | Heather Clarke    |
-| Deputy Manager, Designated Safeguarding and Child Protection Person | Wendy Lowis       |
-| Leader, Health & Safety Officer                                     | Emma Buckland     |
-| SENCO, Key Person Assistant                                         | Barbara Llewellyn |
-| Key Person Assistant                                                | Irene Slade       |
-| Key Person Assistant                                                | Theresa Parsons   |
-| Assistant                                                           | Katie Roberts     |
-| Assistant                                                           | Tracy McLaughlin  |
-| Assistant                                                           | Trina Matheson    |
+|                                                                     |                  |
+| ------------------------------------------------------------------- | ---------------- |
+| Manager, Designated Safeguarding and Child Protection Officer       | Heather Clarke   |
+| Deputy Manager, Designated Safeguarding and Child Protection Person | Wendy Lowis      |
+| SENCO, Leader, Health & Safety Officer                              | Emma Buckland    |
+| Key Person Assistant                                                | Irene Slade      |
+| Key Person Assistant                                                | Theresa Parsons  |
+| Assistant                                                           | Katie Roberts    |
+| Assistant                                                           | Tracy McLaughlin |
+| Assistant                                                           | Trina Matheson   |
 
 <!-- https://youtu.be/MCl-iClRo9k -->

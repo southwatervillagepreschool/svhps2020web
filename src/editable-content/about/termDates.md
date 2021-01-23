@@ -11,7 +11,7 @@ order: 8
 | Half Term         | Monday 26th October – Friday 30th October |
 | Last day of term  | Friday 18th December                      |
 
-### Spring Term 2020
+### Spring Term 2021
 
 |                   |                                             |
 | ----------------- | ------------------------------------------- |
@@ -19,7 +19,7 @@ order: 8
 | Half Term         | Monday 15th February – Friday 19th February |
 | Last day of term  | Thursday 1st April                          |
 
-### Summer Term 2020
+### Summer Term 2021
 
 |                   |                                     |
 | ----------------- | ----------------------------------- |

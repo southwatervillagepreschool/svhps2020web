@@ -1,17 +1,23 @@
 import React, { useEffect } from "react"
-import { connect } from "react-redux"
+// import { connect } from "react-redux"
+import { useSelector, useDispatch } from "react-redux"
 
-const Toggle = ({ navVisibility, dispatch }) => {
+const Toggle = () => {
+  const navVisibility = useSelector(state => state.message.navVisibility)
+  const dispatch = useDispatch()
   useEffect(() => {
     if (navVisibility) {
       dispatch({ type: "CLOSE_NAV" })
+      // console.log(" fffffff oooooo")
     }
-  }, [dispatch])
+  }, [ dispatch])
   return <></>
 }
 
-const mapStateToProps = state => ({
-  navVisibility: state.message.navVisibility,
-})
+// const mapStateToProps = state => ({
+//   navVisibility: state.message.navVisibility,
+// })
 
-export default connect(mapStateToProps)(Toggle)
+// export default connect(mapStateToProps)(Toggle)
+
+export default Toggle
