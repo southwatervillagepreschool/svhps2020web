@@ -15,6 +15,8 @@ A daily staff rota is displayed on the parent notice board in the preschool.
 | SENCO, Leader, Health & Safety Officer                              | Emma Buckland    |
 | Key Person Assistant                                                | Irene Slade      |
 | Key Person Assistant                                                | Theresa Parsons  |
+| Key Person Assistant                                                | Samantha (Sammy)  McGowan  |
+| Key Person Assistant                                                | Sarah Herd  |
 | Assistant                                                           | Katie Roberts    |
 | Assistant                                                           | Tracy McLaughlin |
 | Assistant                                                           | Trina Matheson   |
