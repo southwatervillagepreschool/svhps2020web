@@ -1,6 +1,6 @@
 ---
 title: covid-19
-order: 2
+order: 0
 ---
 
 What is it like at preschool post lockdown?

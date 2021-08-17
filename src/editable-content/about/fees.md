@@ -3,13 +3,13 @@ title: Fees
 order: 4
 ---
 
-#### Fees for under 3s and for children accessing hours above the funded 15 hours from September 2020.
+#### Fees for under 3s and for children accessing hours above the funded 15 hours from September 2021.
 
 |                   |        |
 | ----------------- | ------ |
-| Morning Session   | £18.00 |
+| Morning Session   | £19.00 |
 | Lunch Link        | £6.75  |
-| Afternoon Session | £18.00 |
+| Afternoon Session | £19.00 |
 | Adhoc Session     | £19.00 |
 
 Fees are due in by the end of the second week of the term. Unfortunately, we are unable to give refunds if for any reason a child is unable to attend. If fees are not paid promptly, the committee reserve the right to refuse your child a place.
@@ -22,7 +22,7 @@ If you pay by cash or cheque then these should always be in a sealed envelope wi
 
 ![children activity](../../images/086.jpg)
 
-We have introduced a Lunch Link session for over 3s, which provides the option for children to eat their lunch at Pre-School. The experience of eating lunch in the Pre-School setting helps to develop children’s social skills and independence before they move on to ‘big school’.
+<!-- We have introduced a Lunch Link session for over 3s, which provides the option for children to eat their lunch at Pre-School. The experience of eating lunch in the Pre-School setting helps to develop children’s social skills and independence before they move on to ‘big school’. -->
 
 Attending Lunch Link gives the opportunity to attend Pre-School for the whole day or a longer morning/afternoon session on a Monday, Tuesday or Thursday.
 
@@ -32,4 +32,4 @@ Parents/Carers provide their child with a packed lunch in line with our Lunch Li
 
 In line with the current guidelines regarding funding, children are fully funded for up to five sessions per week (dependent on availability), from the term following their 3rd birthday.
 
-[Universal Free Entitlement Funding Policy](/Universal-Free-Entitlement-Funding-Policy.pdf)
+[Universal Free Entitlement Funding Policy](/universal_free_entitlement_funding_sept_2021.pdf)
