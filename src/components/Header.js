@@ -13,11 +13,11 @@ const Header = () => {
       <img
         style={{ height: "80px", width: "80px" }}
         src={logo}
-        alt="Southwater village preschool logo"
+        alt="Southwater village hall preschool logo"
         className="logo"
       />
       <Link to="/">
-        <h1>Southwater Village Preschool</h1>
+        <h1>Southwater Village Hall Preschool</h1>
       </Link>
       <MenuButton />
       <NavLargeScreens />
