@@ -19,7 +19,7 @@ const Footer = () => {
         <Link to="/news">News</Link>
         <Link to="/contact">Contact</Link>
       </nav>
-      <p>&copy; 2020 Southwater Village Preschool</p>
+      <p>&copy; 2021 Southwater Village Hall Preschool</p>
       <p>Registered Charity 1027293</p>
     </footer>
   )
