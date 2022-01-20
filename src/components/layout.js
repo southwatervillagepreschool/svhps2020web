@@ -6,19 +6,15 @@ import "typeface-hind"
 import "typeface-roboto"
 
 import Header from "./Header"
-import Footer from "./Footer"
+import Footer from "./footer"
 import NavFlyout from "./NavFlyout"
 import OfstedLogo from "./ofsted-logo"
-import Toggle from "../components/toggle"
-
-// import { NavProvider } from "../NavigationProviders"
 
 const Layout = ({ children }) => {
   const { pathname } = useLocation()
 
   return (
     <div>
-      <Toggle />
       <Helmet>
         <meta charSet="utf-8" />
         <title>{pathname.replace("/", "") || "home"}</title>

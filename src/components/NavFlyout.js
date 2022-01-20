@@ -37,7 +37,10 @@ const NavFlyout = ({ navVisibility, dispatch }) => {
     e.preventDefault()
     toggleAbout(false)
     if (pathname !== route) {
-      // dispatch({ type: "CLOSE_NAV" })
+      // allow page to change before we close the nav 
+      // dispatch asynchronously using setTimeout of 0
+      setTimeout(() => dispatch({ type: "CLOSE_NAV" }), 0)
+      // the nav should stay open for a bit after the page changes
       navigate(route)
     } else {
       dispatch({ type: "CLOSE_NAV" })
@@ -77,16 +80,13 @@ const NavFlyout = ({ navVisibility, dispatch }) => {
               <motion.ul
                 className="about-list "
                 initial={{
-                  // visibility: "hidden",
                   opacity: 0,
                 }}
                 animate={{
-                  // visibility: "visible",
                   opacity: 1,
                   transition: 2,
                 }}
                 exit={{
-                  // visibility: "hidden",
                   opacity: 0,
                 }}
               >
