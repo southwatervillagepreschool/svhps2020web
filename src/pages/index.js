@@ -1,10 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import Hero from "../components/Hero"
 import PageArticles from "../components/PageArticles"
-
 
 export default function Home() {
   const data = useStaticQuery(graphql`
@@ -42,7 +41,7 @@ export default function Home() {
         tagLine="WHERE LEARNING IS FUN"
         showButton={true}
       />
-   
+
       <PageArticles listOfArticles={articles} />
     </Layout>
   )

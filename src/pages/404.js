@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { navigate } from "@reach/router"
 // import Layout from "../components/layout"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 
 const Article = styled.article`
   text-align: center;

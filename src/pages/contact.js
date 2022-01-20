@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import Hero from "../components/Hero"
 import PageArticles from "../components/PageArticles"
 
@@ -80,10 +80,10 @@ const Contact = () => {
             title="southwater village preschool"
             width="100%"
             height="600"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
-            marginheight="0"
-            marginwidth="0"
+            marginHeight="0"
+            marginWidth="0"
             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=southwater%20village%20hall+(Southwater%20Village%20Preschool)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>
         </Section>

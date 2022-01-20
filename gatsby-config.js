@@ -85,13 +85,13 @@ module.exports = {
         path: path.join(__dirname, `src`, `editable-content`, `vacancies`),
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `contactPage`,
-        path: path.join(__dirname, `src`, `editable-content`, `contact`),
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `contactPage`,
+    //     path: path.join(__dirname, `src`, `editable-content`, `contact`),
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

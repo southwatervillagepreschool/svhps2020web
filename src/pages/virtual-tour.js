@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import YouTubePlayer from "../components/YouTubePlayer"
 
 const VirtualTour = () => {
@@ -8,7 +8,7 @@ const VirtualTour = () => {
     <Layout>
       {/* <div className="full-bleed">dsadasd</div> */}
       <article>
-        <div >
+        <div>
           <YouTubePlayer src="https://www.youtube.com/embed/MCl-iClRo9k" />
         </div>
       </article>

@@ -25,9 +25,9 @@ const YouTubePlayer = ({ src, title, width = 560, height = 315 }) => {
         width={`${width}`}
         height={`${height}`}
         src={src}
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </Container>
   )
