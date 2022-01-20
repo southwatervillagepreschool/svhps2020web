@@ -6,14 +6,15 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "build-dev": "gatsby build --prefix-paths ",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 0",
-    "deploy-website": "gatsby clean && gatsby build && gh-pages -d public -b main -o website",
-    "deploy-dev": "gatsby clean && gatsby build --prefix-paths && gh-pages -d public  -o origin "
+    "deploy-website": "gh-pages -d public -b main -o website",
+    "deploy-dev": "gh-pages -d public  -o origin "
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.11.1",
