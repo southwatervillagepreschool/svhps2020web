@@ -3,22 +3,13 @@ title: Term Dates
 order: 8
 ---
 
-### Autumn Term 2021
-
-|                   |                                           |
-| ----------------- | ----------------------------------------- |
-| First day of term | Monday 6th September                      |
-| Half Term         | Monday 25th October – Friday 29th October |
-| Christmas Party   | Friday 17th December                      |
-| Last day of term  | Friday 17th December                      |
-
 ### Spring Term 2022
 
 |                   |                                             |
 | ----------------- | ------------------------------------------- |
 | First day of term | Monday 10th January                         |
-| Half Term         | Monday 21th February – Friday 25th February |
-| Last day of term  | Thursday 8st April                          |
+| Half Term         | Monday 21st February – Friday 25th February |
+| Last day of term  | Thursday 8th April                          |
 
 ### Summer Term 2022
 
@@ -26,8 +17,17 @@ order: 8
 | ----------------- | ----------------------------------- |
 | First day of term | Monday 25th April                   |
 | Bank Holiday      | Monday 2nd May                      |
-| Half Term         | Monday 30st May – Friday 3th June   |
-| Last day of term  | Friday 22th July                    |
+| Half Term         | Monday 30th May – Friday 3th June   |
+| Last day of term  | Friday 22nd July                    |
+
+
+### Autumn Term 2022
+
+|                   |                                           |
+| ----------------- | ----------------------------------------- |
+| First day of term | Monday 5th September                      |
+| Half Term         | Monday 24th October – Friday 28th October |
+| Last day of term  | Friday 16th December                      |
 
 ### Sessions
 

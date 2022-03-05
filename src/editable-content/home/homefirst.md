@@ -4,7 +4,7 @@ date: 20 sep 2020
 order: 2
 ---
 
-> Accepting applications for January and April 2022. Some spaces available Autumn 2021.
+> Accepting applications for September 2022.
 
 Southwater Village Hall Preschool was founded in 1974 and is still the only charity-funded preschool in the village
 

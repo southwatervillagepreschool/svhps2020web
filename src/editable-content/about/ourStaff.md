@@ -18,7 +18,7 @@ A daily staff rota is displayed on the parent notice board in the preschool.
 | Key Person Assistant                                                                         | Samantha (Sammy)  McGowan  |
 | Key Person Assistant                                                                         | Sarah Herd  |
 | Key Person Assistant                                                                         | Katie Roberts    |
-| Key Person Assistant                                                                         | Tracy McLaughlin |
+| Key Person Assistant                                                                         | Georgia Palmer |
 | Key Person Assistant                                                                         | Sarah Naylor   |
 | Assistant and Bank Staff                                                                     | Trina Matheson   |
 
