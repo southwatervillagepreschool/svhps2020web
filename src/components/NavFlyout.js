@@ -37,7 +37,7 @@ const NavFlyout = ({ navVisibility, dispatch }) => {
     e.preventDefault()
     toggleAbout(false)
     if (pathname !== route) {
-      // allow page to change before we close the nav 
+      // allow page to change before we close the nav
       // dispatch asynchronously using setTimeout of 0
       setTimeout(() => dispatch({ type: "CLOSE_NAV" }), 0)
       // the nav should stay open for a bit after the page changes

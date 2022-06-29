@@ -4,11 +4,11 @@ import styled from "styled-components"
 const Container = styled.article`
   margin: 2em 0;
   /* text-align: center; */
-  
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-  
+
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+
   iframe {
     position: absolute;
     top: 0;

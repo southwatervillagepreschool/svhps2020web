@@ -13,13 +13,12 @@ order: 8
 
 ### Summer Term 2022
 
-|                   |                                     |
-| ----------------- | ----------------------------------- |
-| First day of term | Monday 25th April                   |
-| Bank Holiday      | Monday 2nd May                      |
-| Half Term         | Monday 30th May – Friday 3th June   |
-| Last day of term  | Friday 22nd July                    |
-
+|                   |                                   |
+| ----------------- | --------------------------------- |
+| First day of term | Monday 25th April                 |
+| Bank Holiday      | Monday 2nd May                    |
+| Half Term         | Monday 30th May – Friday 3th June |
+| Last day of term  | Friday 22nd July                  |
 
 ### Autumn Term 2022
 

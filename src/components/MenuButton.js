@@ -2,7 +2,6 @@ import React from "react"
 import { connect } from "react-redux"
 
 const MenuButton = ({ navVisibility, dispatch }) => {
-
   return (
     <button
       onClick={() => dispatch({ type: "TOGGLE_NAV" })}

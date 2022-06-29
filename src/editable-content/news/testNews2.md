@@ -1,5 +1,5 @@
 ---
-title:  test News 2
+title: test News 2
 date: 2020-12-15
 author: none
 order: 0

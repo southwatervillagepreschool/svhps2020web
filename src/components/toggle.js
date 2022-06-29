@@ -8,7 +8,7 @@ const Toggle = () => {
     if (navVisibility) {
       dispatch({ type: "CLOSE_NAV" })
     }
-  }, [ dispatch])
+  }, [dispatch])
   return <></>
 }
 

@@ -7,7 +7,6 @@ function NavProvider({ children }) {
   const [navOpen, toggleNav] = useState(false)
 
   const handleToggle = () => {
-    
     toggleNav(currentState => !currentState)
   }
   return (
