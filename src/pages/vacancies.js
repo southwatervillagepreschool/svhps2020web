@@ -2,17 +2,9 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Hero2 from "../components/Hero"
-// import PageArticles from "../components/PageArticles"
 import { Link } from "gatsby"
 
-// import ArticleList from "../components/ArticleList"
-// import { NavDispatchContext } from "../NavigationProviders"
-
 const About = () => {
-  // const navStatus = useContext(NavContext)
-  // const setNavStatus = useContext(NavDispatchContext)
-
-  // console.log("status:", navStatus)
   const data = useStaticQuery(graphql`
     query {
       allFile(
@@ -28,8 +20,13 @@ const About = () => {
               title
               order
               pdf
+              datePosted
+              id
             }
             html
+            fields {
+              slug
+            }
           }
         }
       }
@@ -53,22 +50,20 @@ const About = () => {
       />
       <article>
         <h3>We currently have the following Vacancies</h3>
-        {/* <PageArticles listOfArticles={articles} /> */}
-        <p>
-          Due to current COVID-19 restrictions we are unable to offer visits but
-          there is a <Link to="/virtual-tour">virtual tour</Link>.
-        </p>
-
         <ul>
           {vacancies.map(vacancy => (
             <li key={vacancy.childMarkdownRemark.frontmatter.title}>
-              <a href={vacancy.childMarkdownRemark.frontmatter.pdf}>
-                {vacancy.childMarkdownRemark.frontmatter.title}
-              </a>
+              {!vacancy.childMarkdownRemark.frontmatter.pdf && (
+                <Link to={`/vacancy${vacancy.childMarkdownRemark.fields.slug}`}>
+                  {vacancy.childMarkdownRemark.frontmatter.title}{" "}
+                </Link>
+              )}
+              {vacancy.childMarkdownRemark.frontmatter.pdf && (
+                <a href={vacancy.childMarkdownRemark.frontmatter.pdf}>pdf</a>
+              )}
             </li>
           ))}
         </ul>
-        {/* <ArticleList listOfArticles={articles} /> */}
       </article>
     </Layout>
   )
