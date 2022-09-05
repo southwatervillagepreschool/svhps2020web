@@ -10,14 +10,12 @@ A daily staff rota is displayed on the parent notice board in the preschool.
 
 |                                                                                        |                          |
 | -------------------------------------------------------------------------------------- | ------------------------ |
-| Manager, Designated Safeguarding, Health & Safety Officer and Child Protection Officer | Heather Clarke           |
-| Deputy Manager, Designated Safeguarding and Child Protection Person                    | Wendy Lowis              |
-| SENCO and Leader                                                                       | Emma Buckland            |
+| Manager, Designated Safeguarding and Child Protection Officer                          | Heather Clarke           |
+| Deputy Manager, SENCO, Designated Safeguarding and Child Protection Person             | Emma Buckland            |
+| Key Person Assistant and Health and Safety Officer                                     | Samantha (Sammy) McGowan |
+| Key Person Assistant                                                                   | Claire Tugwell           |
 | Key Person Assistant                                                                   | Hannah Green             |
 | Key Person Assistant                                                                   | Irene Slade              |
-| Key Person Assistant                                                                   | Katie Roberts            |
-| Key Person Assistant                                                                   | Rebecca Thornton         |
-| Key Person Assistant                                                                   | Samantha (Sammy) McGowan |
 | Key Person Assistant                                                                   | Sarah Naylor             |
 | Key Person Assistant                                                                   | Theresa Parsons          |
 | Assistant and Bank Staff                                                               | Trina Matheson           |
