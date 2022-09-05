@@ -3,23 +3,6 @@ title: Term Dates
 order: 8
 ---
 
-<!-- ### Spring Term 2022
-
-|                   |                                             |
-| ----------------- | ------------------------------------------- |
-| First day of term | Monday 10th January                         |
-| Half Term         | Monday 21st February – Friday 25th February |
-| Last day of term  | Thursday 8th April                          |
-
-### Summer Term 2022 -->
-
-<!-- |                   |                                   |
-| ----------------- | --------------------------------- |
-| First day of term | Monday 25th April                 |
-| Bank Holiday      | Monday 2nd May                    |
-| Half Term         | Monday 30th May – Friday 3th June |
-| Last day of term  | Friday 22nd July                  | -->
-
 ### Autumn Term 2022
 
 |                   |                                           |
@@ -27,6 +10,23 @@ order: 8
 | First day of term | Monday 5th September                      |
 | Half Term         | Monday 24th October – Friday 28th October |
 | Last day of term  | Friday 16th December                      |
+
+### Spring Term 2023
+
+|                   |                                             |
+| ----------------- | ------------------------------------------- |
+| First day of term | Tuesday 3rd January                         |
+| Half Term         | Monday 13th February – Friday 17th February |
+| Last day of term  | Friday 31st March                          | -->
+
+### Summer Term 2023
+
+|                   |                                   |
+| ----------------- | --------------------------------- |
+| First day of term | Monday 17th April                 |
+| Bank Holiday      | Monday 1st May                    |
+| Half Term         | Monday 29th May – Friday 2nd June |
+| Last day of term  | Friday 14th July                  |
 
 ### Sessions
 
