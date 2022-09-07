@@ -16,7 +16,7 @@ We are registered to take children from 2yrs 4months – 5yrs and offer term tim
 
 Salary: To be discussed at interview (will include holiday pay).
 
-**\*Qualification must be full and relevant to meet Ofsted requirements**
+**Qualification must be full and relevant to meet Ofsted requirements**
 
 ## Job Description
 
@@ -41,7 +41,7 @@ The pre-school deputy manager reports to the pre-school manager and is responsib
 
 ## Main Activities
 
-#### Staff
+### Staff
 
 - To assist with new staff inductions.
 - To manage, supervise and support the pre-school staff.

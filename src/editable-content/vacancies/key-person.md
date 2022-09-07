@@ -16,7 +16,7 @@ Qualification must be full and relevant to meet Ofsted requirements
 
 Are you qualified to a Level 3 with experience of being a key person with sound knowledge of the Early Years Foundation Stage?
 
-### Overall Responsibilities:
+### Overall Responsibilities
 
 - Providing quality education and care for children aged 2-5 years old.
 
@@ -24,7 +24,7 @@ Are you qualified to a Level 3 with experience of being a key person with sound 
 
 - Be committed to improving our current Ofsted grading of ‘Good’.
 
-### Main Activities:
+### Main Activities
 
 · To plan and provide a caring and stimulating environment that is appropriate for individual children, stimulates their learning and enables them to reach their full potential.
 
