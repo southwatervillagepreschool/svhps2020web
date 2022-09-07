@@ -26,10 +26,10 @@ If you pay by cash or cheque then these should always be in a sealed envelope wi
 
 Attending Lunch Link gives the opportunity to attend Pre-School for the whole day or a longer morning/afternoon session on a Monday, Tuesday or Thursday.
 
-Parents/Carers provide their child with a packed lunch in line with our Lunch Link Policy. Lunch Link fees are £6.75 per session and are not currently covered by government funding. The fees are payable termly in advance and are due by the end of the second week of term.
+Parents/Carers provide their child with a packed lunch in line with our Lunch Link Policy. Lunch Link fees are £7.00 per session and are not currently covered by government funding. The fees are payable termly in advance and are due by the end of the second week of term.
 
 ### Free Entitlement Funding
 
 In line with the current guidelines regarding funding, children are fully funded for up to five sessions per week (dependent on availability), from the term following their 3rd birthday.
 
-[Universal Free Entitlement Funding Policy 2001](/universal_free_entitlement_funding_sept_2021.pdf)
+[Universal Free Entitlement Funding Policy 2021](/universal_free_entitlement_funding_sept_2021.pdf)
