@@ -5,14 +5,22 @@ order: 3
 
 The provisions for children’s development and learning is guided by the Early Years Foundation Stage (DfE 2021). Our provision reflects the four overarching principles of the Statutory Framework for the Early Years Foundation Stage.
 
-### the four key themes within the EYFS are:
+### The seven key features of effective practice are
 
-- A unique child
-- Positive relationships
-- Enabling environments
-- Learning and development
+- The best for every child
+- High-quality care
+- The curriculum: what we want the children to learn
+- Pedagogy: helping children to learn
+- Assessment: checking what children have learnt
+- Self-regulation and executive function
+- Partnership with parents
 
-<!-- ### THE AREAS OF LEARNING AND DEVELOPMENT WITHIN THE EYFS ARE: -->
+### The Characteristics of effective teaching  and learning are:
+
+- Playing and exploring
+- Active learning
+- Creating and thinking critically
+
 
 ### The areas of learning and development within the EYFS are:
 
@@ -38,7 +46,7 @@ We aim to achieve the following:
 
 - To work in partnership with parents/carers so that we can provide for all children’s individual and changing needs.
 
-- Our Inclusion Co-ordinator encourages equal opportunities for all children, regardless of cultural differences, gender, and learning abilities.
+- Our Inclusion coordinator encourages equal opportunities for all children, regardless of cultural differences, gender, and learning abilities.
 
 - Play equipment, materials and activities provided are planned by qualified staff to cover all areas of learning, enabling most children to achieve the early learning goals by the end of reception year at school.
 
