@@ -3,7 +3,7 @@ title: Fees
 order: 4
 ---
 
-#### Fees for under 3s and for children accessing hours above the funded 15 hours from September 2022
+### Fees for under 3s and for children accessing hours above the funded 15 hours from September 2022
 
 |                   |        |
 | ----------------- | ------ |
@@ -32,4 +32,10 @@ Parents/Carers provide their child with a packed lunch in line with our Lunch Li
 
 In line with the current guidelines regarding funding, children are fully funded for up to five sessions per week (dependent on availability), from the term following their 3rd birthday.
 
-[Universal Free Entitlement Funding Policy 2021](/universal_free_entitlement_funding_sept_2021.pdf)
+### Policies
+
+[Universal Free Entitlement Funding Policy 2022](/universal_free_entitlement_2022.pdf)
+
+[Schedule of Fees Policy 2022-2023](/schedule_of_fees_2022-2023.pdf)
+
+[Fees and Payments Policy 2022](/fees_and_payments_policy_2022.pdf)
