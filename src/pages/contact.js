@@ -65,8 +65,8 @@ const Contact = () => {
       <article>
         <Section>
           <Address>
-            <a href="mailto:southwaterpreschool@hotmail.co.uk">
-              southwaterpreschool@hotmail.co.uk
+            <a href="mailto:office@southwatervillagepreschool.org">
+              office@southwatervillagepreschool.org
             </a>
             <a href="tel:01403733954">01403 733954</a>
             <p>
