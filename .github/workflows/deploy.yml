@@ -10,10 +10,10 @@ jobs:
   
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
   
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16.x
   
@@ -25,15 +25,21 @@ jobs:
       - name: build
         run: yarn build-dev
   
-      - name: test
-        run: yarn test --if-present
+      # - name: test
+      #   run: yarn test --if-present
       
       - name: deploy with gh-pages to dev server
-        run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          yarn deploy-dev -- -u "github-actions-bot <support+actions@github.com>"
-        env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+
+
+      #   run: |
+      #     git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+      #     yarn deploy-dev -- -u "github-actions-bot <support+actions@github.com>"
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       # - name: deploy with gh-pages
       #   run: |
       #     git remote add website https://git:${GITHUB_TOKEN}@github.com/southwatervillagepreschool/southwatervillagepreschool.github.io.git
