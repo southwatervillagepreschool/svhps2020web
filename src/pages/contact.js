@@ -26,7 +26,13 @@ const Address = styled.address`
     content: "📞";
   }
 `
-
+const FamlyBtn = styled.a`
+  border-bottom: 0;
+  padding: 1rem;
+  background-color: rgb(92, 52, 163);
+  border-radius: .4rem;
+  color: white;
+`
 const Section = styled.section`
   padding: 2rem 0;
 `
@@ -63,6 +69,10 @@ const Contact = () => {
         tagLine="Contact us"
       />
       <article>
+        <p>If you would like to register your interest in joining, please use our online enquiries form</p>
+            <FamlyBtn href="https://app.famly.co/#/inquiry?institutionId=f5ad277b-c0be-4e97-9d30-5f454e95958e&hmac=7f3acac530b8c4f16505968feebd3b0a83928d05ba4e1d1069e686c57bb3ab13&locale=en_GB">
+              Register online
+            </FamlyBtn>
         <Section>
           <Address>
             <a href="mailto:office@southwatervillagepreschool.org">
