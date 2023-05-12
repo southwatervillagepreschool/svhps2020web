@@ -8,16 +8,15 @@ The staff are professionally trained or are currently studying for relevant qual
 
 A daily staff rota is displayed on the parent notice board in the preschool.
 
-|                                                                                        |                          |
-| -------------------------------------------------------------------------------------- | ------------------------ |
-| Manager, Designated Safeguarding and Child Protection Officer                          | Heather Clarke           |
-| Deputy Manager, SENCO, Designated Safeguarding and Child Protection Person             | Emma Buckland            |
-| Key Person Assistant and Health and Safety Officer                                     | Samantha (Sammy) McGowan |
-| Key Person Assistant                                                                   | Claire Tugwell           |
-| Key Person Assistant                                                                   | Hannah Green             |
-| Key Person Assistant                                                                   | Irene Slade              |
-| Key Person Assistant                                                                   | Sarah Naylor             |
-| Key Person Assistant                                                                   | Theresa Parsons          |
-| Assistant and Bank Staff                                                               | Trina Matheson           |
+|                                                               |                          |
+| ------------------------------------------------------------- | ------------------------ |
+| Manager, Designated Safeguarding and Child Protection Officer | Emma Buckland            |
+| Key Person Assistant and Health and Safety Officer            | Samantha (Sammy) McGowan |
+| Key Person Assistant                                          | Hannah Green             |
+| Key Person Assistant                                          | Claire Tugwell           |
+| Key Person Assistant                                          | Irene Slade              |
+| Key Person Assistant                                          | Sarah Naylor             |
+| Key Person Assistant                                          | Georgina Palmer          |
 
 <!-- https://youtu.be/MCl-iClRo9k -->
+<!-- | Deputy Manager, SENCO, Designated Safeguarding and Child Protection Person             | Emma Buckland            | -->
