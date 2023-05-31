@@ -11,13 +11,13 @@ order: 8
 | Half Term         | Monday 24th October – Friday 28th October |
 | Last day of term  | Friday 16th December                      | -->
 
-### Spring Term 2023
+<!-- ### Spring Term 2023
 
 |                   |                                             |
 | ----------------- | ------------------------------------------- |
 | First day of term | Tuesday 3rd January                         |
 | Half Term         | Monday 13th February – Friday 17th February |
-| Last day of term  | Friday 31st March                           | --> |
+| Last day of term  | Friday 31st March                           | --> | -->
 
 ### Summer Term 2023
 
